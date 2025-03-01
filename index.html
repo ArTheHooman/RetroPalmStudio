@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <link rel="manifest" href="imgs/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Retro Palm Studios</title>
+
+    <style>
+        html
+        {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+
+<body id="Home" class="bg-background_l dark:bg-background_d">
+
+    <!-- Navbar -->
+     
+
+    <section id="" class="bg-background_l dark:bg-background_d sticky top-0 z-50">
+        <nav x-data="{ isOpen: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 0"
+          :class="scrolled ? 'bg-opacity-100 bg-background' : 'bg-transparent'"
+          class="container p-6 mx-auto lg:flex lg:justify-between lg:items-center transition-all duration-300">
+          <div class="flex items-center justify-between">
+            <a href="#Home" class="text-2xl font-extrabold text-primary_l dark:text-primary_d tracking-wide hover:text-primary_l/80 dark:hover:text-primary_l/120 transition-colors">
+              Retro Palm Studios
+            </a>
+    
+            <!-- Mobile menu button -->
+            <div class="flex lg:hidden">
+              <button @click="isOpen = !isOpen" type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+                <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                </svg>
+    
+                <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+    
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+            class="absolute inset-x-0 z-40 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+            <div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
+              <a href="#Home"
+                class="nav-link relative group text-text_l dark:text-text_d transition-colors duration-300 transform lg:mx-8 hover:text-text_l/50">Home
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent_l"></span>
+              </a>
+              <a href="#Games"
+                class="nav-link relative group text-text_l dark:text-text_d transition-colors duration-300 transform lg:mx-8 hover:text-text_l/50">Games
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent_l"></span>
+              </a>
+              <a href="#Team"
+                class="nav-link relative group text-text_l dark:text-text_d transition-colors duration-300 transform lg:mx-8 hover:text-text_l/50">Team
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent_l"></span>
+              </a>
+              <a href="#Devlogs"
+                class="nav-link relative group text-text_l dark:text-text_d transition-colors duration-300 transform lg:mx-8 hover:text-text_l/50">Devlogs
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent_l"></span>
+              </a>
+              <a href="#FAQ"
+                class="nav-link relative group text-text_l dark:text-text_d transition-colors duration-300 transform lg:mx-8 hover:text-text_l/50">FAQs
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent_l"></span>
+              </a>
+              <a href="#Contact"
+                class="nav-link relative group text-text_l dark:text-text_d transition-colors duration-300 transform lg:mx-8 hover:text-text_l/50">Contact
+                Us
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-accent_l"></span>
+              </a>
+    
+            </div>
+          </div>
+        </nav>
+      </section>
+  
+
+      <!-- Hero -->
+
+
+      <section id="" class="bg-background_l dark:bg-background_d">
+        <div class="container px-6 py-16 mx-auto">
+          <div class="items-center lg:flex">
+            <div class="w-full lg:w-1/2">
+              <div class="lg:max-w-lg">
+                <h1 class="text-3xl font-semibold text-text_l dark:text-text_d lg:text-4xl">
+                  <span class="text-primary_l dark:text-primary_d">Dream. </span>
+                  <span class="text-secondary_l dark:text-secondary_d">Develop. </span>
+                  <span class="text-primary_l dark:text-primary_d">Dominate. </span>
+                </h1>
+    
+                <p class="mt-3 text-text dark:text-gray-400">We are a passionate indie studio crafting immersive experiences on Roblox. With our first game in development,
+                   we aim to push boundaries and create unforgettable adventures. Join us on this journey!</p>
+    
+                <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+                  <a href="#Games"
+                    class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Checkout our Games</a>
+                  <a href="#Contact"
+                    class="block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Join the Community
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+              <img class="rounded-lg w-full h-full lg:max-w-3xl" src="/imgs/banner.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Games -->
+
+      
+
+      <hr id="Games" class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+
+      <section id="" class="bg-background_l dark:bg-background_d py-10">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-semibold text-text_l dark:text-text_d mb-6">Our Games</h2>
+    
+          <!-- Event Dates Information -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="bg-white dark:bg-background_d p-6 rounded-lg shadow-md">
+              <p class="mt-2 text-md text-gray-00 dark:text-text_d">Horror, Point'n'Click</p>
+              <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">Dead Dreams: Demo</h3>
+              <img class="mt-4 justify-center rounded-lg w-full h-3/4 lg:max-w-3xl" src="/imgs/dead dreams demo.png" alt="">
+              <div class="mb-4 justify-center flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+                <a href="dead_demo.html"
+                  class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Know More</a>
+                <a href=""
+                  class="cursor-not-allowed block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Play Game
+                </a>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-background_d p-6 rounded-lg shadow-md">
+              <p class="mt-2 text-md text-gray-00 dark:text-text_d">Horror, Point'n'Click</p>
+              <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">Dead Dreams: Full Game</h3>
+              <img class="mt-4 justify-center rounded-lg w-full h-3/4 lg:max-w-3xl" src="/imgs/dead dreams demo.png" alt="">
+              <div class="mb-4 justify-center flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+                <a href="dead_full.html"
+                  class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Know More</a>
+                <a href=""
+                  class="cursor-not-allowed block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Play Game
+                </a>
+              </div>
+          </div>
+        </div>
+        </div>
+        </section>
+        <!-- Team -->
+
+      <hr id="Team" class="mt-4 w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <section class="bg-background_l dark:bg-background_d">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Meet the Team</h1>
+    
+            <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+These are the geniuses working behind our games.</p>
+    
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">tptiwari</h1>
+    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Founder / Lead Developer</p>
+    
+                    
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">danthecat_1005</h1>
+    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Programmerr</p>
+    
+                    
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">realnodi</h1>
+    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Modeller / Animator / Writer</p>
+    
+                    
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">arthehooman</h1>
+    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Writer / Bot & Web Developer</p>
+    
+                    
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">pokesharks</h1>
+    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Map Designer</p>
+    
+                    
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">tranquilhorizon</h1>
+    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Graphic Designer</p>
+    
+                    
+                </div>      
+                </div>
+            </div>
+        </div>
+    </section>
+        
+      </section> 
+
+      <!-- FAQs-->
+
+
+      
+      <hr id="FAQ" class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <section>
+<!-- component -->
+<div class="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
+  <h1 class="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold">FAQ's</h1>
+
+
+      <!-- Question 1 -->
+      <div class="mt-10 w-full md:px-6">
+        <div id="mainHeading" class="flex justify-between items-center w-full">
+            <div class="">
+                <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q1.</span>Who are you guys?</p>
+            </div>
+            <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+            </button>
+        </div>
+        <div id="menu" class="hidden mt-6 w-full">
+            <p class="ml-15 text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">We are Retro Palm Studios. We are a team of indie devs working hard to make great games on Roblox.</p>
+        </div>
+    </div>
+
+      <div class="mt-10 w-full md:px-6">
+          <div id="mainHeading" class="flex justify-between items-center w-full">
+              <div class="">
+                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 md:leading-4 text-gray-800"><span class="lg:mr-6 mr-4 dark:text-white lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q2.</span> Where is your studio located?</p>
+              </div>
+              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+              </button>
+          </div>
+          <div id="menu" class="hidden mt-6 w-full">
+              <p class="ml-15 text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">We have devs from all over the world, but the founder is from India. Hence, The studio is based in India</p>
+          </div>
+      </div>
+
+      <!-- Question 2 -->
+
+      <div class="mt-10 w-full md:px-6">
+          <div id="mainHeading" class="flex justify-between items-center w-full">
+              <div class="">
+                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q3.</span> What are the games you've worked on?</p>
+              </div>
+              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+              </button>
+          </div>
+          <div id="menu" class="hidden mt-6 w-full">
+              <p class="ml-15 text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">You can access the list of games by clicking <a href="games" class="text-blue-500">here</a>.</p>
+          </div>
+      </div>
+
+      <!-- Question 3 -->
+
+      <div class="mt-10 w-full md:px-6">
+          <div id="mainHeading" class="flex justify-between items-center w-full">
+              <div class="">
+                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q4.</span> How can I recieve weekly updates about the games you're working on?</p>
+              </div>
+              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+              </button>
+          </div>
+          <div id="menu" class="hidden mt-6 w-full">
+              <p class="ml-15 text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">You can receive weekly updates by join our <a href="https://discord.gg/d2wxAHSVUu" class="text-blue-500">discord server</a>.</p>
+          </div>
+      </div>
+
+      <!-- Question 4 -->
+
+      
+
+      <!-- Question 5 -->
+
+      <div class="mt-10 w-full md:px-6">
+          <div id="mainHeading" class="flex justify-between items-center w-full">
+              <div class="">
+                  <p class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"><span class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q5.</span>What is your current project?</p>
+              </div>
+              <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                  <img class="transform dark:hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                  <img class="transform dark:block hidden " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+              </button>
+          </div>
+          <div id="menu" class="hidden mt-6 w-full">
+              <p class="ml-15 text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">We are currently working on Dead Dreams, a FNAF fangame. The demo is going to be released in April 2025 and the Full Game is schedules to release in Late 2025. <br>Know More by clicking<a class="text-blue-500" href="deadfull">here</a>.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+let elements = document.querySelectorAll("[data-menu]");
+for (let i = 0; i < elements.length; i++) {
+let main = elements[i];
+
+main.addEventListener("click", function () {
+let element = main.parentElement.parentElement;
+let indicators = main.querySelectorAll("img");
+let child = element.querySelector("#menu");
+let h = element.querySelector("#mainHeading>div>p");
+
+h.classList.toggle("font-semibold");
+child.classList.toggle("hidden");
+// console.log(indicators[0]);
+indicators[0].classList.toggle("rotate-180");
+});
+}
+  </script>
+
+
+      </section>
+
+      <!-- Contact -->
+      <hr id="Contact" class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+
+      <section class="bg-background_l dark:bg-background_d">
+        <div class="container px-6 py-12 mx-auto">
+            <div class="text-center">    
+                <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Contact Us</h1>
+    
+                <p class="mt-3 text-gray-500 dark:text-gray-400">Our team is always ready to help.</p>
+            </div>
+    
+            <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-2">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </span>
+    
+                    <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Email</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">We will respond within 72 business hours.</p>
+                    <p class="mt-2 text-blue-500 dark:text-blue-400">...</p>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                      </svg>
+                    </span>
+                    
+                    <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Discord Server</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">Join our discord server for instant support.</p>
+                    <a class="mt-2 text-blue-500 dark:text-blue-400" href="https://discord.gg/d2wxAHSVUu">Invite Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background_l dark:bg-background_d">
+      <div class="container flex flex-col items-center justify-between px-6 py-8 mx-auto lg:flex-row">
+          <a href="#home" class="text-xl font-bold text-primary_l dark:text-primary_d">
+              Retro Palm Studios
+          </a>
+  
+          <div class="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6 lg:mt-0">
+              <a href="#Home" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                  Home
+              </a>
+  
+              <a href="#Games" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                  Games
+              </a>
+  
+              <a href="#" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                  Devlogs
+              </a>
+              <a href="#Contact" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                  Contact Us
+              </a>
+          </div>
+  
+          <p class="mt-6 text-sm text-gray-500 lg:mt-0 dark:text-gray-400">© All rights reserved. Made with ❤ by arthehooman </p>
+      </div>
+  </footer>
+</body>
+
+</html>
