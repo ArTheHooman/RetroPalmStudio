@@ -116,7 +116,7 @@
             </div>
     
             <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-              <img class="rounded-lg w-full h-full lg:max-w-3xl" src="./imgs/banner.webp" alt="">
+              <img class="rounded-lg w-full h-full lg:max-w-3xl" src="/imgs/banner.webp" alt="">
             </div>
           </div>
         </div>
@@ -131,54 +131,111 @@
       <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
 
 
-      <section id="" class="bg-background_l dark:bg-background_d py-10">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-3xl font-semibold text-text_l dark:text-text_d mb-6">Our Games</h2>
-    
-          <!-- Event Dates Information -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-            <div class="bg-white dark:bg-background_d p-6 rounded-lg shadow-md">
-              <p class="mt-2 text-md text-gray-00 dark:text-text_d">Horror, Point'n'Click</p>
-              <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">Dead Dreams: Demo</h3>
-              <img class="mt-4 justify-center rounded-lg w-full h-3/4 lg:max-w-3xl" src="./imgs/dead dreams demo.png" alt="">
-              <div class="mb-4 justify-center flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
-                <a href="dead_demo.html"
-                  class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Know More</a>
-                <a href=""
-                  class="cursor-not-allowed block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Play Game
-                </a>
+      <div class="container mx-auto">
+        <h1 class="mt-20 text-2xl font-bold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our Games</h1>
+        
+        <div class="space-y-12">
+
+          <!-- Game Card 1 (Odd) -->
+          <div class="mt-20 card bg-white rounded-4xl shadow-xl overflow-hidden">
+            <div class="p-4 md:p-6">
+              <div class="flex justify-center mb-2">
+                <span class="inline-flex items-center rounded-md bg-background_l px-2 py-1 text-xs font-medium text-primary_l ring-1 ring-secondary_l/80 ring-inset">Horror, Point-and-Click</span>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">Dead Dreams: Demo</h2>
+              
+              <div class="flex flex-col md:flex-row gap-6">
+                <!-- Left side (image for odd cards) -->
+                <div class="md:w-1/2 order-1">
+                  <div class="aspect-video bg-base-300 rounded-lg flex items-center justify-center">
+                    <span class="text-base-content/50">
+                      <img class="rounded-4xl w-full h-full lg:max-w-3xl" src="imgs/dead dreams demo.png" alt="Dead Dreams Cover">
+                    </span>
+                  </div>
+                </div>
+                
+                <!-- Right side (details for odd cards) -->
+                <div class=" align-middle flex-col md:w-1/2 order-2">
+                  <div class="prose max-w-none mb-4">
+                    <div class="h-32 bg-base-200 rounded-lg flex justify-center mb-4">
+                      <span class="text-base-content/50">
+                        <p class="mt-3 text-text dark:text-gray-400 justify-center lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10">
+                          Dead Dreams: Demo is a preview of our upcoming game,<span class="text-primary_l font-semibold"> Dead Dreams</span>
+                          , offering players a hands-on experience with its core mechanics. Get a glimpse of the final gameplay and prepare for what's to come
+                        </p>
+                        <p class="font-bold lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10"><br>Release Date: April 2025</p>
+                        <p class="font-bold lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10">Plaform: Roblox</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col pt-10 space-y-3 lg:space-y-0 lg:flex-row lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10">
+                    <a href="#Games"
+                      class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Know More →</a>
+                    <a href="#Contact"
+                      class="block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Play the Game ↗
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="bg-white dark:bg-background_d p-6 rounded-lg shadow-md">
-              <p class="mt-2 text-md text-gray-00 dark:text-text_d">Horror, Point'n'Click</p>
-              <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">Dead Dreams: Full Game</h3>
-              <img class="mt-4 justify-center rounded-lg w-full h-3/4 lg:max-w-3xl" src="./imgs/dead dreams demo.png" alt="">
-              <div class="mb-4 justify-center flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
-                <a href="dead_full.html"
-                  class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Know More</a>
-                <a href=""
-                  class="cursor-not-allowed block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Play Game
-                </a>
+          </div>
+          
+          <div class="mt-20 card bg-white rounded-4xl shadow-xl overflow-hidden">
+            <div class="p-4 md:p-6">
+              <div class="flex justify-center mb-2">
+                <span class="inline-flex items-center rounded-md bg-background_l px-2 py-1 text-xs font-medium text-primary_l ring-1 ring-secondary_l/80 ring-inset">Horror, Point-and-Click</span>
               </div>
+              <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">Dead Dreams: Full Game</h2>
+              
+              <div class="flex flex-col md:flex-row gap-6">
+
+                <div class=" align-middle flex-col md:w-1/2 order-2 md:order-1">
+                  <div class="prose max-w-none mb-4">
+                    <div class="h-32 bg-base-200 rounded-lg flex justify-center mb-4">
+                      <span class="text-base-content/50">
+                        <p class="mt-3 text-text dark:text-gray-400 justify-center lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10">
+                          Dead Dreams is our main project—a FNAF fan game packed with suspense, mystery, and unexpected twists. With a gripping story and intense gameplay, it will keep you on edge from start to finish!
+                        </p>
+                        <p class="font-bold lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10"><br>Release Date: Late 2025</p>
+                        <p class="font-bold lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10">Plaform: Roblox</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col pt-10 space-y-3 lg:space-y-0 lg:flex-row lg:mr-20 lg:ml-20 sm:mr-10 sm:ml-10">
+                    <a href="#Games"
+                      class="z-5 block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_d transition-colors duration-300 transform bg-text_l dark:text-text_l dark:bg-text_d rounded-md hover:border-accent_l border-2 hover:text-text_l hover:bg-text_d/90">Know More →</a>
+                    <a href="#Contact"
+                      class="block px-5 py-2 text-sm font-medium tracking-wider text-center text-text_l transition-colors duration-300 transform bg-text_d rounded-md lg:mx-4 hover:text-text_d hover:border-accent_d border-2 hover:bg-text_l">Play the Game ↗
+                    </a>
+                  </div>
+                </div>
+                <div class="md:w-1/2 order-1">
+                  <div class="aspect-video bg-base-300 rounded-lg flex items-center justify-center">
+                    <span class="text-base-content/50">
+                      <img class="rounded-lg w-full h-full lg:max-w-3xl" src="imgs/dead dreams demo.png" alt="Dead Dreams Cover">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-        </section>
+      </div>
         <!-- Team -->
 
-      <hr id="Team" class="mt-4 w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+      <hr id="Team" class="mt-15 w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
 
       <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
 
       <section class="bg-background_l dark:bg-background_d">
         <div class="container px-6 py-10 mx-auto">
-            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Meet the Team</h1>
+            <h1 class="pt-10 text-2xl font-bold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Meet the Team</h1>
     
             <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
 These are the geniuses working behind our games.</p>
     
             <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-                <div class="bg-white rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
+                <div class="bg-white dark:bg-background_l rounded-lg shadow-md flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:scale-110 hover:bg-primary_l dark:hover:bg-primary_d">
                     <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="imgs/profile.png" alt="">
     
                     <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">tptiwari</h1>
@@ -193,7 +250,7 @@ These are the geniuses working behind our games.</p>
     
                     <h1 class="mt-4 text-2xl font-bold text-text_l dark:text-text_d group-hover:text-text_d">danthecat_1005</h1>
     
-                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Programmerr</p>
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Programmer</p>
     
                     
                 </div>
@@ -248,14 +305,14 @@ These are the geniuses working behind our games.</p>
 
 
       
-      <hr id="FAQ" class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
+      <hr id="FAQ" class="mt-15 w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
 
       <hr class="w-1/2 sm:w-2/3 mx-auto border-t-2 border-gray-300">
 
       <section>
 <!-- component -->
 <div class="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
-  <h1 class="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold">FAQ's</h1>
+  <h1 class="pt-10 text-2xl font-bold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">FAQs</h1>
 
 
       <!-- Question 1 -->
@@ -376,7 +433,7 @@ indicators[0].classList.toggle("rotate-180");
       <section class="bg-background_l dark:bg-background_d">
         <div class="container px-6 py-12 mx-auto">
             <div class="text-center">    
-                <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Contact Us</h1>
+              <h1 class="pt-10 text-2xl font-bold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Contact Us</h1>
     
                 <p class="mt-3 text-gray-500 dark:text-gray-400">Our team is always ready to help.</p>
             </div>
